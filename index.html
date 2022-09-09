@@ -1,11 +1,42 @@
-<html>
-<head>
-<meta http-equiv="Content-Language" content="zh-CN">
-<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb2312">
-<meta http-equiv="refresh" content="0;url=https://cl.3637y.xyz/index.php?u=568158&ext=829c0">
-<title>1024</title>
-</head>
-<body>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百度一下，你就知道</title>
+    <style type="text/css">
+        .center {
+            /* width: 400px;
+            height: 200px; */
+            border: 5px dotted #ff0066;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -100px;
+            margin-left: -200px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        最新地址一：<a href='#' id="url1">点击访问①</a><br><br>
+        最新地址二：<a href='#' id="url2">点击访问②</a><br><br>
+        最新地址三：<a href='#' id="url3">点击访问③</a><br><br>
+    </div>
 </body>
-</html>  
+<script>
+    var dn = '9602';
+    var xyz = ['', 'x', 'y', 'z']
+    for (i = 1; i <= 3; i++) {
+        var obj = document.getElementById('url' + i);
+        var dom = 'cl.' + dn + xyz[i] + '.xyz' + '/index.php?u=568158&ext=829c0';
+        obj.href = 'https://' + dom;
+        // obj.innerText = dom;
+    }
+</script>
+
+</html>
